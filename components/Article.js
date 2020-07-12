@@ -116,19 +116,19 @@ function articleMaker(obj){
   const articleContainer = document.createElement('div');
   articleContainer.className="article"
   const articleTitle = document.createElement('h2');
-  articleTitle.innerText = obj.title
+  articleTitle.textContent = obj.title
   const articleDate = document.createElement('p');
   articleDate.className="date"
-  articleDate.innerText = obj.date
+  articleDate.textContent = obj.date
   const p1 = document.createElement('p');
-  p1.innerText = obj.firstParagraph
+  p1.textContent = obj.firstParagraph
   const p2 = document.createElement('p');
-  p2.innerText = obj.secondParagraph
+  p2.textContent = obj.secondParagraph
   const p3 = document.createElement('p');
-  p3.innerText = obj.thirdParagraph
+  p3.textContent = obj.thirdParagraph
   const expandButton = document.createElement('span');
   expandButton.className = "expandButton"
-  expandButton.innerText = "+"
+  expandButton.textContent = "+"
   expandButton.addEventListener('click',()=>
   articleContainer.classList.toggle('article-open'))
   articleContainer.append(articleTitle, articleDate,p1,p2,p3,expandButton)
